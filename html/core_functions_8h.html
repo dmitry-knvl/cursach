@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Konovalov 5138: Файл coreFunctions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Konovalov 5138
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.3 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл coreFunctions.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
+<code>#include &lt;locale&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &quot;<a class="el" href="support_functions_8h_source.html">supportFunctions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="structs_8h_source.html">structs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
+</div>
+<p><a href="core_functions_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a420f8c19b4995c730200ca809b12843d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#a420f8c19b4995c730200ca809b12843d">log</a> (wstring s, <a class="el" href="enums_8h.html#a6b435845628e65e91f9c907918bec7d8">ConsoleFormats</a> mode=<a class="el" href="enums_8h.html#a6b435845628e65e91f9c907918bec7d8acd7ffe737ad5fb21fbd7499886934910">LOG</a>, bool br=true)</td></tr>
+<tr class="separator:a420f8c19b4995c730200ca809b12843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463abe7d682b6ef6fc100e18d872d4e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#a463abe7d682b6ef6fc100e18d872d4e7">printHeader</a> ()</td></tr>
+<tr class="separator:a463abe7d682b6ef6fc100e18d872d4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cef481a6ec81bf07e44e9e9e4aecfbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_file_data.html">FileData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#a4cef481a6ec81bf07e44e9e9e4aecfbd">getFileData</a> ()</td></tr>
+<tr class="separator:a4cef481a6ec81bf07e44e9e9e4aecfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fa294f96281229f944e1a370820b51"><td class="memItemLeft" align="right" valign="top">wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#aa6fa294f96281229f944e1a370820b51">readFromFile</a> (wifstream &amp;InputFile)</td></tr>
+<tr class="separator:aa6fa294f96281229f944e1a370820b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51bce22dbfe5c0344a2f8198da39a9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#af51bce22dbfe5c0344a2f8198da39a9e">writeIntoResultFIle</a> (vector&lt; wstring &gt; A, wofstream &amp;OutputFile)</td></tr>
+<tr class="separator:af51bce22dbfe5c0344a2f8198da39a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4243d5e2ded6f9c49cdc4fa382de0269"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#a4243d5e2ded6f9c49cdc4fa382de0269">writeIntoStatisticFIle</a> (wstring txt, int n, double t, vector&lt; wstring &gt; a, wofstream &amp;OutputFile)</td></tr>
+<tr class="separator:a4243d5e2ded6f9c49cdc4fa382de0269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0610062df1d45215d77a04625d79746c"><td class="memItemLeft" align="right" valign="top">vector&lt; wstring &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#a0610062df1d45215d77a04625d79746c">split</a> (wstring str)</td></tr>
+<tr class="separator:a0610062df1d45215d77a04625d79746c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b34ba7152b1bc452c14c1dc323f5b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#a68b34ba7152b1bc452c14c1dc323f5b0">shell</a> (vector&lt; wstring &gt; &amp;A)</td></tr>
+<tr class="separator:a68b34ba7152b1bc452c14c1dc323f5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355e047877af1c9e8757bd91ff743f90"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_functions_8h.html#a355e047877af1c9e8757bd91ff743f90">benchmark</a> (vector&lt; wstring &gt; &amp;a, void(*f)(vector&lt; wstring &gt; &amp;))</td></tr>
+<tr class="separator:a355e047877af1c9e8757bd91ff743f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a355e047877af1c9e8757bd91ff743f90" name="a355e047877af1c9e8757bd91ff743f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355e047877af1c9e8757bd91ff743f90">&#9670;&nbsp;</a></span>benchmark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double benchmark </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; wstring &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(vector&lt; wstring &gt; &amp;)&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cef481a6ec81bf07e44e9e9e4aecfbd" name="a4cef481a6ec81bf07e44e9e9e4aecfbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cef481a6ec81bf07e44e9e9e4aecfbd">&#9670;&nbsp;</a></span>getFileData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_file_data.html">FileData</a> getFileData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a420f8c19b4995c730200ca809b12843d" name="a420f8c19b4995c730200ca809b12843d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420f8c19b4995c730200ca809b12843d">&#9670;&nbsp;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log </td>
+          <td>(</td>
+          <td class="paramtype">wstring&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a6b435845628e65e91f9c907918bec7d8">ConsoleFormats</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="enums_8h.html#a6b435845628e65e91f9c907918bec7d8acd7ffe737ad5fb21fbd7499886934910">LOG</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>br</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a463abe7d682b6ef6fc100e18d872d4e7" name="a463abe7d682b6ef6fc100e18d872d4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463abe7d682b6ef6fc100e18d872d4e7">&#9670;&nbsp;</a></span>printHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printHeader </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6fa294f96281229f944e1a370820b51" name="aa6fa294f96281229f944e1a370820b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6fa294f96281229f944e1a370820b51">&#9670;&nbsp;</a></span>readFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wstring readFromFile </td>
+          <td>(</td>
+          <td class="paramtype">wifstream &amp;&#160;</td>
+          <td class="paramname"><em>InputFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68b34ba7152b1bc452c14c1dc323f5b0" name="a68b34ba7152b1bc452c14c1dc323f5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b34ba7152b1bc452c14c1dc323f5b0">&#9670;&nbsp;</a></span>shell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shell </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; wstring &gt; &amp;&#160;</td>
+          <td class="paramname"><em>A</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0610062df1d45215d77a04625d79746c" name="a0610062df1d45215d77a04625d79746c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0610062df1d45215d77a04625d79746c">&#9670;&nbsp;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vector&lt; wstring &gt; split </td>
+          <td>(</td>
+          <td class="paramtype">wstring&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af51bce22dbfe5c0344a2f8198da39a9e" name="af51bce22dbfe5c0344a2f8198da39a9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51bce22dbfe5c0344a2f8198da39a9e">&#9670;&nbsp;</a></span>writeIntoResultFIle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeIntoResultFIle </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; wstring &gt;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wofstream &amp;&#160;</td>
+          <td class="paramname"><em>OutputFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4243d5e2ded6f9c49cdc4fa382de0269" name="a4243d5e2ded6f9c49cdc4fa382de0269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4243d5e2ded6f9c49cdc4fa382de0269">&#9670;&nbsp;</a></span>writeIntoStatisticFIle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeIntoStatisticFIle </td>
+          <td>(</td>
+          <td class="paramtype">wstring&#160;</td>
+          <td class="paramname"><em>txt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; wstring &gt;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wofstream &amp;&#160;</td>
+          <td class="paramname"><em>OutputFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
+</small></address>
+</body>
+</html>
